@@ -1,0 +1,155 @@
+html, body {
+    font-family: arial;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav Styles */
+
+ul {
+    position: fixed;
+    float: right;
+    list-style-type: none;
+    text-align: right;
+    right: 1.5%;
+    z-index: 3;
+}
+
+li {
+    margin: 5%;
+    padding: 4px;
+    /* background-color: #42e8f4; */
+    color: white;
+    font-weight: bold;
+    font-size: .75vw;
+    width: 55px;
+    opacity: 1;
+    border-radius: 1px;
+    animation: appear 1s linear 11s forwards;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+a {
+    color: white;
+    padding: 3px;
+    text-decoration:none;
+    background-color: #42e8f4;
+}
+
+.active {
+    background-color: orange;
+}
+
+/*General Designs*/
+
+h1 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.blue-background {
+    background-color: grey;
+    color: white;
+}
+
+.letters {
+    border-bottom: 2px solid #42e8f4;
+}
+
+.letters:hover {
+    color: orange;
+}
+
+.container {
+    margin: 5%;
+    padding: 10px;
+}
+
+.container > h2, .portfolio-container > h2 {
+    font-size: 7vw;
+    font-weight: normal;
+    text-align: left;
+}
+
+.container-grid {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+img {
+    max-width: 75%;
+    max-height: auto;
+    border: 4px solid white;
+}
+
+
+/* About Section Styles */
+
+
+footer {
+    position: bottom;
+    padding: 15px 0 5px 0;
+    min-height: 75px;
+    background-color: orange;
+    margin-top: -5%;
+    text-align: center;
+    color: white;
+}
+
+#footer-id {
+    border: 3px solid white;
+    font-size: 3em;
+    margin: 1%;
+    margin-top: 2%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.icons {
+    min-height: 50px;
+    display: inline-block;
+}
+
+a.icon-links {
+    font-size: 1.25em;
+    background: none;
+    font-weight: normal;
+}
+
+a.icon-links:hover {
+    font-size: 1.5em;
+}
+
+#city-footer {
+    font-size: 0.85em;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 600px){
+    .container-grid {
+        grid-template-columns: 100%;
+    }
+
+    a {
+        opacity: 0;
+    }
+
+    a.active {
+        opacity: 1;
+        font-size: 3em;
+    }
+
+}

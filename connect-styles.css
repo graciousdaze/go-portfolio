@@ -1,0 +1,35 @@
+main {
+    text-align: center;
+}
+
+#contain {
+    min-height: 25vw;
+    margin-top: 4vw;
+}
+
+#form-headline {
+    padding-top: 2vw;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+textarea {
+    margin-top: 0.5vw;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height:25px;
+}
+
+button {
+    min-width: 100%;
+    height: 25px;
+    background-color: #473F3E;
+    color: white;
+    border: none;
+}

@@ -1,0 +1,94 @@
+/*Header Styling*/
+
+header {
+    display: flex;
+    min-height: 50vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: normal;
+    color: #42e8f4;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 20% 30% 40%;
+}
+
+#home > h1 > span {
+    border: 2px solid #42e8f4;
+}
+
+#text-wrap {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 20% 30% 40%;
+}
+
+/* Header Animations */
+
+.header-words {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.header-words span {
+    margin-left: -1em;
+    margin-top: 0.5em;
+    position: absolute;
+    display: inline;
+    overflow: hidden;
+    color: orange;
+    opacity: 0;
+    border-right: 3px solid transparent;
+    font-size: 7vw;
+}
+
+.header-words span:nth-child(1){
+    animation: makeVisible 1.5s linear, makeInvisible 1.5s linear .5s, blink-border 0.75s step-end infinite;
+    max-width: 3.1em;
+}
+
+.header-words span:nth-child(2){
+    animation: makeVisible 1.5s linear 2.5s, makeInvisible 1.5s linear 3.25s, blink-border 0.75s step-end infinite;
+    max-width: 3.4em;
+}
+
+.header-words span:nth-child(3){
+    animation: makeVisible 1.5s linear 5.5s, makeInvisible 1.5s linear 6.25s, blink-border 0.75s step-end infinite;
+    max-width: 3em;
+}
+
+.header-words span:nth-child(4){
+    animation: makeVisible 1.5s linear 8.25s forwards, blink-border 0.75s step-end infinite;
+    max-width: 3.65em;
+}
+
+@keyframes makeVisible {
+    0% {opacity: 1; width: 0}
+    35% {opacity: 1; width: 25%}
+    65% {opacity: 1; width: 50%}
+    85% {opacity: 1; width: 75%}
+    100% {opacity: 1; width: 100%}
+}
+
+@keyframes makeInvisible {
+    0% {opacity: 1; width: 100%}
+    20% {opacity: 1; width: 80%}
+    40% {opacity: 1; width: 60%}
+    60% {opacity: 1; width: 40%}
+    80% {opacity: 1; width: 20%}
+    100% {opacity: 1; width: 0%}
+}
+
+@keyframes blink-border {
+    from, to {border-color: transparent;}
+    50% {border-color: grey;}
+}
