@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- <script src="scripts.js"></script> -->
+
+
+  </head>
+  <body>
+    <header>
+      <h1>The Nifty Markdown Previewer <a href="https://codepen.io/grcobrien/full/ZrvQWv/" target="_blank"><i class="fas fa-feather-alt"></i></a></h1>
+      <p></p>
+    </header>
+    <div id="contain">
+    </div>
+    <script type="text/babel">
+
+const placeholderText = `# Marked - Markdown Parser 
+[Marked](https://github.com/markedjs/marked) is a useful library that can allow you to create previews of HTML elements. Here are some of the things you can do:
+
+## Headings
+As demonstrated with the first line in the previewer you can create headers by using a number of # in correspondence to the desired heading ti
+
+> This is a block quote!
+
+1. Want to see a numbered list?
+2. No problem!
+3. Just start typing out your list...
+4. ....like this!!
+
+But sometimes you want a good old fashioned bullet list, well good news! You can try that out too:
+
+* Bullet lists are pretty neat
+* They're pretty useful
+
+You can also create \`<p>inline code</p>\` by wrapping text with single back ticks
+
+\`\`\`
+//Or you can make some multi-line code too:
+
+const makeCoolThings = () => true;
+\`\`\`
+
+Okay, okay...so I know what you're thinking. Yeah all of that stuff up there is nifty and all, but what if you want to make it italicized? Sure thing you can _certainly_ do that!
+
+But wait...what if I want to make it bold?? Oh my, **of course** you can!
+
+How about putting it all together?? **_Well check me out!_**
+
+That's all pretty neat, isn't it? And there's even more you can do with it! So what are you waiting for?!?! Go be an HTML preview ninja and try it out!`
+
+      //Enables the use of line breaks
+      marked.setOptions({
+        breaks:true
+      });
+
+      class Presentation extends React.Component{
+        constructor(props){
+          super(props);
+          this.state = {
+            input: placeholderText
+          }
+          this.handleChange = this.handleChange.bind(this);
+        }
+        handleChange(event){
+          this.setState({
+            input: event.target.value
+          });
+        }
+        render(){
+          return(
+            <div className='row'>
+              <textarea value={this.state.input} id='editor' className='col-sm-6' onChange={this.handleChange} />
+              <div id='preview' className='col-sm-6' dangerouslySetInnerHTML={{__html: marked(this.state.input, {sanitize:true})}}>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<Presentation />, document.getElementById("contain"));
+    </script>
+  </body>
+</html>

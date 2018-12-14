@@ -1,0 +1,51 @@
+/*Full Page Styles*/
+html, body {
+    height: 100%;
+  }
+  
+  /*Header Styles*/
+  header {
+    min-height: 9vh;
+    text-align: center;
+    background-color: rgb(142, 60, 12);
+    color: white;
+  }
+  
+  header > h1 {
+    padding: 2%;
+    padding-bottom: 0;
+    font-size: 5em;
+    font-family: 'satisfy', cursive;
+  }
+  
+  header > p {
+    padding: 1%;
+    font-size: 0.9em;
+    margin: 0;
+  }
+  
+  i {
+    color: white;
+  }
+  
+  i:hover {
+    color: rgb(237, 204, 184);
+  }
+  
+  /*Main Body Styles*/
+  #editor, #preview {
+    padding: 2em;
+    min-height: 90vh;
+    overflow: hidden;
+    background-color: rgba(250,60,75,0.02);
+    outline: 0;
+  }
+  
+  #preview {
+    border-left: 4px solid rgb(142, 60, 12);
+  }
+  
+  img {
+    max-height: 150px;
+    display: inline;
+  }
