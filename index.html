@@ -3,59 +3,78 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" initial-scale="1.0" />
-        <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link rel="shortcut icon" type="image/png" href=""/>
         <link rel="stylesheet" href="header.css" type="text/css" />
+        <link rel="stylesheet" href="about.css" type="text/css" />
         <link rel="stylesheet" href="portfolio-styles.css" type="text/css" />
         <link rel="stylesheet" href="connect-styles.css" type="text/css" />
         <title>GO</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a class="active" href="#home">GO</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#connect">Connect</a></li>
-            </ul>
-        </nav>
         <header>
             <div id="home">
                 <h1><span>GO</span></h1>
             </div>
             <div id="text-wrap">
                 <span id="header-words" class="header-words">
-                            <span>Design</span>
-                            <span>Explore</span>
-                            <span>Create</span>
-                            <span>Develop </span>
+                    <span>Explore</span>
+                    <span>Create</span>
+                    <span>Develop </span>
                 </span>
             </div>
+            <div id="arrow">
+                <a href="#about" id="point-down"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
         </header>
-        <main class="blue-background">
-            <div id="about">
-                <div class="container">
-                    <h2 class="headlines">About <span class="letters">G</span>race <span class="letters">O</span>'Brien</h2>
+        <nav class="navbar">
+            <a class="nav-link nav-heading navbar-brand" href="#home">GO</a>
+            <div class="nav-link-container">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">RESUME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#connect">CONNECT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div id="about"></div>
+            <div class="grey-background">
+                <div class="about-container">
                     <div class="container-grid">
                         <div class="column">
-                            <p>All great ventures start with a vision for the future. Inspired by making the impossible possible, Envisioned Design is a web design company that seeks to be a catalyst for you and your vision. Be it a fresh new face for your on-going venture, or entirely from scratch, we provide the necessary tools to get your brand up and running online, so you don't have to worry about it.</p>
+                            <h2 class="headlines">Hi, I'm <span class="letters">G</span>race <span class="letters">O</span>'Brien!</h2>
+                            <p class="about-txt">
+                                <span class="creative">Creativity</span> has always been a part of my life - from graphic design to photography to painting to music, there's always been an innate need to create. 
+                                <br /><br/>
+                                Part of that creativity has led to a curiousity with <span class="logic">logic</span>. It gives me great joy to problem solve and search for the connecting patterns in our world. 
+                                <br/><br/>
+                                Previously, in 2015 I completed a Bachelor's in Intercultural Studies: International Development - and a highlight of my studies was the opportunity I had to learn the basics of 3 different <span class="languages">languages</span> - Mandarin, Hindi, and Arabic. 
+                                <br/><br/>
+                                Beginning of the summer of 2017, I told myself if I could find a line of work that combined those three together, <span class="creative">creativity</span>, <span class="logic">logic</span>, and <span class="languages">languages</span>, that I would be satisfied. It was that same summer that I picked up web design on the side as a hobby. For the first time I learned about Javascript and that was when it clicked. Right there, I found all three things that I had been looking for, and immediately I was hooked. I delved deeper and deeper, only to get absolutely hooked. The more I got into the programming side of web development, the more I realized that this is what I wanted to do. 
+                                <br/><br/>
+                                A year after self study and I'm now back in school with the goal to graduate with a BS in Computer Science. My passion and goal is to utilize this momentum to become a part of the movement using technology to make this world a better place through creative and practical innovation.
+                            </p>
                         </div>
-                        <div class="column">
+                        <div class="column about-img">
                             <img src="about-img-edit.jpg" />
                         </div>
                     </div>
                 </div>
             </div>
-            <span id="portfolio"></span>
             <!-- Full Webpage Portfolio -->
             <div id="portfolio-contain">
                 <div class="triangle"></div>
                 <div class="portfolio-container">
-                    <h2 class="headlines">GO Explore</h2>
+                    <span id="portfolio"></span>
+                    <h2 class="headlines explore">GO Explore</h2>
                     <div class="portfolio-grid">
-                        <div class="portfolio-column portfolio-img twitch"></div>
+                        <div class="portfolio-column"></div>
                         <div class="portfolio-column circle-grid">
                             <div class="circle-row">
                                 <div class="circles invisible-circle"></div>
@@ -69,11 +88,27 @@
                         </div>
                         <div class="portfolio-column portfolio-txt">
                             <h3>twitch.TV App</h3>
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                            <p>A twitch.tv project created for the freeCodeCamp Front End Certificate. Using the API provided by freeCodeCamp, users can check and see if their favorite twitch channels are currently streaming, and if so, what they are streaming.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/twitch-tv-project" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/twitch-tv/index.html">Live Preview</a>
+                            </p>
                         </div>
                         <div class="portfolio-column portfolio-txt">
                             <h3>Markdown Previewer</h3>
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                            <p>A web app used to preview Markdown text. Text can be edited on the right using Markdown Syntax, and will give a preview of what it would look like on the right. Created as a project to complete the freeCodeCamp Front End Libraries Certification.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <i class="tools-icons bigger devicon-react-original"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/markdown-previewer" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/markdown-previewer/index.html">Live Preview</a></p>                            
                         </div>
                         <div class="portfolio-column circle-grid">
                             <div class="circle-row">
@@ -86,9 +121,9 @@
                                 <div class="circles 5"></div>
                             </div>
                         </div>
-                        <div class="portfolio-column portfolio-img markdown">
+                        <div class="portfolio-column">
                         </div> 
-                        <div class="portfolio-column portfolio-img weather">
+                        <div class="portfolio-column">
                         </div>                       
                         <div class="portfolio-column circle-grid">
                             <div class="circle-row">
@@ -103,11 +138,26 @@
                         </div>
                         <div class="portfolio-column portfolio-txt">
                             <h3>Weather App</h3>
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                            <p>A local weather app built using the Apixu weather API. The app can generte the local weather for the user using location based services and show both current and forecasted conditions.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <i class="tools-icons devicon-jquery-plain"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/weather-app" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/weather-app/index.html">Live Preview</a>
+                            </p>                            
                         </div>
                         <div class="portfolio-column portfolio-txt">
-                            <h3>Neil Hilborn Tribute</h3>
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                            <h3>Stopwatch Console App</h3>
+                            <p>A simple console application written with C# in Visual Studio that functions as a stop watch with various functions: starting, pausing, continuing, stopping, and resetting. It was created as a project in order to practice working with classes and encapsulation.
+                                <br/><br/>
+                                <i class="tools-icons devicon-csharp-plain"></i>
+                                <i class="tools-icons devicon-dot-net-plain"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/stopwatch" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a>
+                            </p>                            
                         </div>
                         <div class="portfolio-column circle-grid">
                             <div class="circle-row">
@@ -120,12 +170,10 @@
                                 <div class="circles 11"></div>
                             </div>
                         </div>
-                        <div class="portfolio-column portfolio-img neil">
+                        <div class="portfolio-column">
                         </div>                        
-                        <div class="portfolio-column portfolio-column-tagline">
-                            <span class="portfolio-tagline">
-                                <!-- GO -->
-                            </span></div>
+                        <div class="portfolio-column">
+                        </div>
                         <div class="portfolio-column circle-grid">
                             <div class="circle-row">
                                 <div class="circles 12"></div>
@@ -134,66 +182,143 @@
                                 <div class="circles 13 circles-big"></div>
                             </div>
                             <div class="circle-row">
-                                <div class="circles invisible-circle"></div>
+                                <div class="circles 14"></div>
                             </div>
                         </div>
                         <div class="portfolio-column portfolio-txt">
-                                <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                            <h3>Pomodoro Kitty Clock</h3>
+                            <p>A Pomodoro Timer web app. It can be used to keep track of work time and breaks using the Pomodoro Technique. Created as a part of earning the Front End Libraries certification through freeCodeCamp.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <i class="tools-icons bigger devicon-react-original"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/pomodoro-timer" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/pomodoro-clock/index.html">Live Preview</a>
+                            </p>
                         </div>
+                        <div class="portfolio-column portfolio-txt">
+                            <h3>Neil Hilborn Tribute</h3>
+                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                            <p><a class="portfolio-links" target="_blank" href="portfolio/projects/neil-hilborn/index.html">Live Preview</a></p>                 
+                        </div>
+                        <div class="portfolio-column circle-grid">
+                            <div class="circle-row">
+                                <div class="circles 15"></div>
+                            </div>
+                            <div class="circle-row">
+                                <div class="circles 16 circles-big"></div>
+                            </div>
+                            <div class="circle-row">
+                                <div class="circles invisible-circle"></div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <!-- Mobile Portfolio Section -->
                     <div class="portfolio-responsive">
-                        <h3>twitch.TV App</h3>
-                        <div class="portfolio-column portfolio-img twitch"></div>
-                        <div class="portfolio-column portfolio-txt">
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                        <div class="portfolio-column portfolio-txt mobile-txt">
+                            <h3>twitch.TV App</h3>
+                            <p>A twitch.tv project created for the freeCodeCamp Front End Certificate. Using the API provided by freeCodeCamp, users can check and see if their favorite twitch channels are currently streaming, and if so, what they are streaming.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/twitch-tv-project" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/twitch-tv/index.html">Live Preview</a>
+                            </p>
                         </div>
-                        <h3>Markdown Previewer</h3>
-                        <div class="portfolio-column portfolio-img markdown"></div> 
-                        <div class="portfolio-column portfolio-txt">
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                        <div class="portfolio-column portfolio-txt mobile-txt">
+                            <h3>Markdown Previewer</h3>
+                            <p>A web app used to preview Markdown text. Text can be edited on the right using Markdown Syntax, and will give a preview of what it would look like on the right. Created as a project to complete the freeCodeCamp Front End Libraries Certification.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <i class="tools-icons bigger devicon-react-original"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/markdown-previewer" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/markdown-previewer/index.html">Live Preview</a>
+                            </p>                            
+                        </div>                  
+                        <div class="portfolio-column portfolio-txt mobile-txt">
+                            <h3>Weather App</h3>   
+                            <p>A local weather app built using the Apixu weather API. The app can generte the local weather for the user using location based services and show both current and forecasted conditions.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <i class="tools-icons devicon-jquery-plain"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/weather-app" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/weather-app/index.html">Live Preview</a>
+                            </p>     
                         </div>
-                        <h3>Weather App</h3>
-                        <div class="portfolio-column portfolio-img weather"></div>                       
-                        <div class="portfolio-column portfolio-txt">
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
-                        </div>
-                        <h3>Neil Hilborn Tribute</h3>
-                        <div class="portfolio-column portfolio-img neil"></div>
-                        <div class="portfolio-column portfolio-txt">
-                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
-                        </div>                      
-                        <div class="portfolio-column portfolio-column-tagline"><span class="portfolio-tagline">GO</span></div>
-                        <div class="portfolio-column portfolio-txt">
-                                <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes. This is some filler text for formatting purposes.</p>
+                        <div class="portfolio-column portfolio-txt mobile-txt">
+                                <h3>Stopwatch Console App</h3>
+                                <p>A simple console application written with C# in Visual Studio that functions as a stop watch with various functions: starting, pausing, continuing, stopping, and resetting. It was created as a project in order to practice working with classes and encapsulation.
+                                    <br/><br/>
+                                    <i class="tools-icons devicon-csharp-plain"></i>
+                                    <i class="tools-icons devicon-dot-net-plain"></i>
+                                    <br/><br/>
+                                    <a href="https://github.com/graciousdaze/stopwatch" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a>
+                                </p>                        </div>
+                        <div class="portfolio-column portfolio-txt mobile-txt">
+                            <h3>Pomodoro Clock</h3>
+                            <p>A Pomodoro Timer web app. It can be used to keep track of work time and breaks using the Pomodoro Technique. Created as a part of earning the Front End Libraries certification through freeCodeCamp.
+                                <br/><br/>
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <i class="tools-icons bigger devicon-react-original"></i>
+                                <br/><br/>
+                                <a href="https://github.com/graciousdaze/pomodoro-timer" target="_blank" class="portfolio-icons"><i class="fab fa-github"></i></a> // <a class="portfolio-links" target="_blank" href="portfolio/projects/pomodoro-clock/index.html">Live Preview</a>
+                            </p>                         </div>                      
+                        <div class="portfolio-column portfolio-txt mobile-txt">
+                            <h3>Neil Hilborn Tribute</h3>
+                            <p>This is some filler text for formatting purposes. This is some filler text for formatting purposes.
+                                <br /><br />
+                                <i class="tools-icons devicon-html5-plain"></i>
+                                <i class="tools-icons devicon-css3-plain"></i>
+                                <i class="tools-icons devicon-bootstrap-plain"></i>
+                                <i class="tools-icons devicon-javascript-plain"></i>
+                                <br /><br/>
+                                <a class="portfolio-links" target="_blank" href="portfolio/projects/neil-hilborn/index.html">Live Preview</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="connect">
-                <div class="container">
-                    <h2 id="form-headline">GO Connect</h2>
+            <div id="connect"></div>
+            <div class="connect-container" class="grey-background">
+                <div class="form-container">
                     <form class="connect-form">
-                    <input type="text" id="name" name="name" placeholder="Name" class="input" />
-                        <input type="email" id="email" name="email" placeholder="Email" class="input" /><br />
-                        <textarea class="input-txt" rows="6" columns="10"></textarea><br />
-                        <button>Connect</button>
+                    <h2 id="form-headline">Get in Touch</h2>
+                    <input type="text" id="name" name="name" required placeholder="Name*" class="input" />
+                    <input type="email" id="email" name="email" required placeholder="Email*" class="input" /><br />
+                    <textarea class="input-txt" rows="6" placeholder="Send me a message!" columns="10"></textarea><br />
+                    <button>Connect</button>
                     </form>
+                </div>
+                <div class="connection">
+                    <p>Fill out the form on the left to get in touch. Check out links and get connected on social media platforms below.</p>
                 </div>
             </div>
         </main>
         <footer>
             <div class="icons">
-                <a href="#" class="icon-links"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="icon-links"><i class="fab fa-codepen"></i></a>
+                <a href="https://www.linkedin.com/in/grcobrien/" target="_blank" class="icon-links"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://codepen.io/grcobrien/" target="_blank" class="icon-links"><i class="fab fa-codepen"></i></a>
             </div>
             <span id="footer-id">GO</span>
             <div class="icons">
-                <a href="#" class="icon-links"><i class="fab fa-github"></i></a>
-                <a href="#" class="icon-links"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/graciousdaze" target="_blank" class="icon-links"><i class="fab fa-github"></i></a>
+                <a href="https://www.freecodecamp.org/graciousdaze" target="_blank" class="icon-links"><i class="fab fa-free-code-camp"></i></a>
             </div><br/>
             <span id="city-footer">Minneapolis, MN</span>
         </footer>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="scripts.js"></script>
     </body>
 </html>
