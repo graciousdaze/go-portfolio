@@ -1,25 +1,23 @@
 html, body {
-    height: 100%;
     font-family: "Gochi Hand";
     text-align: center;
-    color: white;
     background-color: rgb(79, 135, 83);
+    color: #303030;
   }
   
-  #container {
-    height: 95vh;
-  }
-  
-  /* Kitty Image Designs */
-  
-  #kitty {
-    margin-top: 2em;
-  }
-  
-  #kitty-img {
-    margin-top: 2em;
-    height: 15vw;
-  }
+#root {
+    background-color: rgba(360,360,360, 0.8);
+    margin: 5%;
+    margin-top: 2%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+  font-size: 5vw;
+  margin: 3% auto 3% auto;
+  max-width: 45%;
+}
   
   /* Button Designs */
   
@@ -37,36 +35,64 @@ html, body {
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: black;
+    border: 3px solid #505050;
+
   }
   
   .buttons:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(79, 135, 83, 0.2);
   }
   
   .buttons, button {
-    width: 15vw;
+    max-width: 15vw;
     font-size: 2vw;
+    margin:1%;
     border-radius: 15px;
   }
+
+  button {
+    background-color: white;
+    font-family: "Gochi Hand";
+    margin: 1vw;
+    padding: 2vw;
+    border: 3px solid #505050;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  button:hover {
+      background-color: rgba(79,135, 83, 0.2);
+  }
+
+  #start {
+      background-color: rgba(0, 128, 0, 0.75);
+      color: white;
+      font-size: 3vw;
+  }
+
+  #stop {
+      background-color: rgba(255, 0, 0, 0.75);
+      color: white;
+      font-size: 3vw;
+  }
+
   /* Time Designs */
   
   #time {
     font-size: 10vw;
     font-family: "Poor Story";
+    margin:3%;
   }
-  
-  button {
+
+  #time > p {
+    border: 5px solid #505050;
+    padding: 5px;
+    max-width: 50%;
+    margin: auto;
+    border-radius: 10px;
     background-color: white;
-    font-family: "Gochi Hand";
-    border: none;
-    margin: 2vw;
-    padding: 2vw;
-  }
-  
-  button:focus {
-    outline: none;
   }
   
   @media only screen and (max-width: 1000px) {
