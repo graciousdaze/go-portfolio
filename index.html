@@ -3,6 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -31,7 +36,7 @@
                 <a href="#about" id="point-down"><i class="fas fa-chevron-circle-down"></i></a>
             </div>
         </header>
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <a class="nav-link nav-heading navbar-brand" href="#home">GO</a>
             <div class="nav-link-container">
                 <ul class="nav justify-content-end">
@@ -40,6 +45,28 @@
                     <li class="nav-item"><a class="nav-link" href="#">RESUME</a></li>
                     <li class="nav-item"><a class="nav-link" href="#connect">CONNECT</a></li>
                 </ul>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="nav-link navbar-brand nav-heading" href="#home">GO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="nav-icon fas fa-bars"></i>
+            </button>      
+            <div class="nav-link-container collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#connect">CONNECT</a>
+                </li>
+              </ul>
             </div>
         </nav>
         <main>
@@ -317,8 +344,7 @@
                 <a href="https://www.freecodecamp.org/graciousdaze" target="_blank" class="icon-links"><i class="fab fa-free-code-camp"></i></a>
             </div><br/>
             <span id="city-footer">Minneapolis, MN</span>
-        </footer>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </footer>        
         <script src="scripts.js"></script>
     </body>
 </html>
