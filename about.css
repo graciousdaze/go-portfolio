@@ -1,0 +1,50 @@
+#about {
+    min-height: 5vw;
+    background-color: #808080;
+}
+
+h2.headlines {
+    font-size: 5vw;
+}
+
+.about-img {
+    margin-top: 10vw;
+    text-align: center;
+}
+
+.creative {
+    color: orange;
+}
+
+.logic {
+    color: #F8A78A;
+}
+
+.languages {
+    color: #42e8f4;
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-txt {
+        font-size: 1.6vw;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .about-txt {
+        font-size: 1.85vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about-txt {
+        font-size: 2.75vw;
+    }
+
+    .about-img {
+        margin-top: 5vw;
+        text-align: center;
+    }
+}
+
