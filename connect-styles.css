@@ -1,5 +1,6 @@
-main {
-    text-align: center;
+#connect {
+    min-height: 3vw;
+    background-color: #9a9a9a;
 }
 
 #contain {
@@ -7,29 +8,89 @@ main {
     margin-top: 4vw;
 }
 
+.connect-container {
+    padding-bottom: 5vw;
+    background-color: #9a9a9a;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
 #form-headline {
-    padding-top: 2vw;
+    margin-top: -5%;
+    padding-top: 0;
+    position: top;
+    font-size: 5vw;
+}
+
+.connection {
+    margin-top: 5vw;
+    margin-right: 3vw;
+    color: white;
 }
 
 form {
-    width: 50%;
-    margin: auto;
+    max-width: 100%;
+    display: grid;
+    align-content: center;
+    margin-top: 4vw;
+    padding: 5vw;
+    background: white;
+    color: #808080;
+    border-radius: 5px;
 }
 
 textarea {
-    margin-top: 0.5vw;
     width: 100%;
+    border-radius: 5px;
 }
 
-input {
-    width: 100%;
-    height:25px;
-}
-
-button {
-    min-width: 100%;
-    height: 25px;
-    background-color: #473F3E;
-    color: white;
+input, textarea {
+    width: 95%;
+    min-height:25px;
     border: none;
+    font-family: 'Questrial';
+    font-size: 1em;
+    color: #808080;
+    border-bottom: 2px solid #808080;
+    background: rgba(360,360,360,0.1);
+    background: transparent;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.input-txt {
+    border: 2px solid #808080;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border: 2px solid #42e8f4;
+    border-radius: 5px;
+}
+
+.connect-form > button {
+    min-width: 104%;
+    height: auto;
+    background-color: #808080;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.25em;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    div.connect-container {
+        grid-template-columns: 100%;
+    }
+
+    div > .connection {
+        display: none;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
 }
