@@ -71,6 +71,13 @@ div.portfolio-container {
     box-shadow: -11px 8px 50px -12px rgba(0,0,0,0.73);
 }
 
+.more {
+    max-height: 45%;
+    max-width: 75%;
+    margin:20%;
+    margin-right: 0;
+}
+
 a.portfolio-links {
     color: #808080;
     font-weight: bold;
@@ -87,9 +94,21 @@ a.portfolio-links {
 
 /* GO Styles for Portfolio section */
 
+.portfolio-column {
+    padding: 10px;
+}
+
 .portfolio-column > h3 {
+    margin-top: 5%;
     margin-bottom: 0;
+    padding-top: 10px;
     padding-bottom: 0;
+}
+
+.portfolio-column > p {
+    margin: 5%;
+    padding-bottom: 10px;
+    line-height: 1.9vw;
 }
 
 /* Portfolio Circle Styles */
@@ -130,6 +149,10 @@ a.portfolio-links {
     opacity: 1;
 }
 
+.more-links {
+    color: #303030;
+}
+
 /* Portfolio Image Styles */
 
 .portfolio-responsive {
@@ -138,6 +161,12 @@ a.portfolio-links {
 }
 
 /* Portfolio Text Styles */
+
+@media only screen and (max-width: 900px){
+    .portfolio-column {
+        padding: 15px;
+    }
+}
 
 @media only screen and (max-width: 600px){
     .portfolio-grid {
@@ -159,6 +188,20 @@ a.portfolio-links {
 
     .mobile-txt > p {
         font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    div.more.portfolio-txt.mobile-txt {
+        min-width: 95%;
+        margin: 3%;
+        padding: 25px;
+        max-height: 100%;
+    }
+
+    .more > p, .more-links {
+        margin-top: 0;
+        font-size: 3vw;
+        margin-bottom: 0;
     }
 
     .mobile-txt > h3 {

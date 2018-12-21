@@ -26,6 +26,13 @@ header {
     background: white;
 }
 
+h1 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    margin: 0;
+    padding: 0;
+}
+
 #text-wrap {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -56,7 +63,7 @@ header {
     padding: 0;
     display: inline;
     grid-column-start: 1;
-    grid-row-start: 2;
+    grid-row-start: 3;
 }
 
 .header-words span {
@@ -72,17 +79,17 @@ header {
 
 .header-words span:nth-child(1){
     animation: makeVisible 1.5s linear, makeInvisible 1.5s linear .5s, blink-border 0.75s step-end infinite;
-    max-width: 3.35em;
+    max-width: 3.37em;
 }
 
 .header-words span:nth-child(2){
     animation: makeVisible 1.5s linear 2.5s, makeInvisible 1.5s linear 3.25s, blink-border 0.75s step-end infinite;
-    max-width: 3.07em;
+    max-width: 3.09em;
 }
 
 .header-words span:nth-child(3){
     animation: makeVisible 1.5s linear 5.5s forwards, blink-border 0.75s step-end infinite;
-    max-width: 3.75em;
+    max-width: 3.71em;
 } 
 
 @keyframes makeVisible {
@@ -116,4 +123,21 @@ header {
     #text-wrap {
         margin-left: 1.5vw;
     }
+}
+
+@media only screen and (max-width: 750px){
+    .header-words span:nth-child(1){
+        animation: makeVisible 1.5s linear, makeInvisible 1.5s linear .5s, blink-border 0.75s step-end infinite;
+        max-width: 3.42em;
+    }
+    
+    .header-words span:nth-child(2){
+        animation: makeVisible 1.5s linear 2.5s, makeInvisible 1.5s linear 3.25s, blink-border 0.75s step-end infinite;
+        max-width: 3.16em;
+    }
+    
+    .header-words span:nth-child(3){
+        animation: makeVisible 1.5s linear 5.5s forwards, blink-border 0.75s step-end infinite;
+        max-width: 3.72em;
+    } 
 }
