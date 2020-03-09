@@ -1,6 +1,6 @@
 .resume-header {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 40% 35%;
     background: #505050;
 }
 
@@ -18,13 +18,33 @@
     border: 2px solid #42e8f4;
 }
 
-.info {
+.info, .contact-info {
     color: white;
     margin: 5%;
 }
 
+.contact-info > p
+{
+    text-align: right;
+    margin-right: 15%;
+}
+
+
+.icon-links-resume {
+    font-size: 1.1em;
+    background: none;
+    font-weight: normal;
+    margin: 1px;
+    color: #42e8f4;
+}
+
+.icon-links-resume:hover
+{
+    color: white;
+}
+
 .name {
-    font-size: 6vw;
+    font-size: 5.5vw;
     color: white;
     line-height: 1.75vw;
     margin-top: 2%;
@@ -66,7 +86,34 @@ p, .work > ul, .cert > ul  {
     margin-left: 9%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 550px) {
+
+    .resume-header {
+        grid-template-columns: 25% 75%;
+    }
+
+    .contact-info > p
+    {
+        display: inline;
+        margin: auto;
+    }
+
+    .contact-info
+    {
+        grid-column-start: 1;
+        grid-column-end: span col2-start;
+        margin: 1%;
+        text-align: center;
+    }
+
+    .info
+    {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
     span.contact{
         font-size: 1.75vw;
         margin-left: 2%;
@@ -84,7 +131,6 @@ p, .work > ul, .cert > ul  {
         border: 2px solid white;
         padding: 0 15px;
     }
-
     
 }
 
