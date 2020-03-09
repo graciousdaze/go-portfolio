@@ -1,7 +1,10 @@
 html, body {
     font-family: "Gochi Hand";
     text-align: center;
-    background-color: rgb(79, 135, 83);
+    height:100%;
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #303030;
   }
   
@@ -14,9 +17,9 @@ html, body {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 5.5vw;
   margin: 3% auto 3% auto;
-  max-width: 45%;
+  max-width: 55%;
 }
   
   /* Button Designs */
@@ -29,7 +32,12 @@ h1 {
   #study {
     grid-column-start: 2;
   }
-  
+
+  .button-span
+  {
+    pointer-events: none;
+  }
+
   .buttons {
     display: flex;
     align-items: center;
@@ -40,7 +48,7 @@ h1 {
   }
   
   .buttons:hover {
-    background-color: rgba(79, 135, 83, 0.2);
+    background-color: rgba(185,147,214,0.5);
   }
   
   .buttons, button {
@@ -67,13 +75,13 @@ h1 {
   }
 
   #start {
-      background-color: rgba(0, 128, 0, 0.75);
+      background-color: rgb(151, 222, 154);
       color: white;
       font-size: 3vw;
   }
 
   #stop {
-      background-color: rgba(255, 0, 0, 0.75);
+      background-color: rgba(217, 116, 108);
       color: white;
       font-size: 3vw;
   }
